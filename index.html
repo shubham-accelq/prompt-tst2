@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html> -->
+<!-- <html>
 <head>
   <title>Alert Redirect Example</title>
   <script>
@@ -16,5 +16,31 @@
 </head>
 <body>
   <button onclick="showAlert()">Click me</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Example</title>
+</head>
+<body>
+  <script>
+    // Function to handle the login process
+    function login() {
+      var username = prompt("Enter your username:");
+      var password = prompt("Enter your password:");
+      
+      // Check if username and password are correct
+      if (username === "admin" && password === "password") {
+        alert("Login successful!");
+	window.location.href = "https://www.accelq.com";
+      } else {
+        alert("Login failed. Please try again.");
+      }
+    }
+  </script>
+
+  <button onclick="login()">Login</button>
 </body>
 </html>
