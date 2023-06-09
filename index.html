@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alert Redirect Example</title>
+  <script>
+    function showAlert() {
+      var message = prompt("Enter a message:");
+      
+      if (message) {
+        alert(message);
+      } else {
+        window.location.href = "https://www.accelq.com";
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showAlert()">Click me</button>
+</body>
+</html>
